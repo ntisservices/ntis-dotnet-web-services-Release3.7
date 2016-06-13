@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriberWebService", "SubscriberWebService\SubscriberWebService.csproj", "{D65C27C5-0B32-46F2-96B0-D2B0C6CCC919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZipEncoder", "GZipEncoder\GZipEncoder.csproj", "{3EB736C4-62EA-4887-B040-948B13EF29B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExampleRequests", "ExampleRequests", "{373F6DC5-4766-4BB5-9BC6-462684449D14}"
+	ProjectSection(SolutionItems) = preProject
+		..\exampleRequests\DeliverANPRTrafficDataRequest.xml = ..\exampleRequests\DeliverANPRTrafficDataRequest.xml
+		..\exampleRequests\DeliverFusedFvdAndSensorTrafficDataRequest.xml = ..\exampleRequests\DeliverFusedFvdAndSensorTrafficDataRequest.xml
+		..\exampleRequests\DeliverFusedSensorOnlyTrafficDataRequest.xml = ..\exampleRequests\DeliverFusedSensorOnlyTrafficDataRequest.xml
+		..\exampleRequests\DeliverMIDASTrafficDataRequest.xml = ..\exampleRequests\DeliverMIDASTrafficDataRequest.xml
+		..\exampleRequests\DeliverRoadworksEventDataRequest.xml = ..\exampleRequests\DeliverRoadworksEventDataRequest.xml
+		..\exampleRequests\DeliverTMUTrafficDataRequest.xml = ..\exampleRequests\DeliverTMUTrafficDataRequest.xml
+		..\exampleRequests\DeliverVMSTrafficDataRequest.xml = ..\exampleRequests\DeliverVMSTrafficDataRequest.xml
+		..\exampleRequests\NtisModelUpdateNotificationRequest.xml = ..\exampleRequests\NtisModelUpdateNotificationRequest.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D65C27C5-0B32-46F2-96B0-D2B0C6CCC919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65C27C5-0B32-46F2-96B0-D2B0C6CCC919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65C27C5-0B32-46F2-96B0-D2B0C6CCC919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65C27C5-0B32-46F2-96B0-D2B0C6CCC919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB736C4-62EA-4887-B040-948B13EF29B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB736C4-62EA-4887-B040-948B13EF29B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB736C4-62EA-4887-B040-948B13EF29B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB736C4-62EA-4887-B040-948B13EF29B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
