@@ -164,10 +164,7 @@ namespace SubscriberWebService.Services
                         foreach(Situation situation in situations)
                         {
                             // Only have 1 situationRecord per situation (index=0)
-                            SituationRecord situationRecord = situation.situationRecord[0];
-                            EventCache.Remove(situationRecord.id);
-                            EventCache.Add(situationRecord.id, situationRecord);
-                            ProcessEventData(situationRecord);
+                            processEventData(situation);
                         }
                     }
                 }
@@ -175,6 +172,22 @@ namespace SubscriberWebService.Services
                 {
                     log.Error(e.Message);
                 }
+            }
+        }
+
+        private void processEventData(Situation situation)
+        {
+            SituationRecord situationRecord = situation.situationRecord[0];
+            EventCache.Remove(situationRecord.id);
+            EventCache.Add(situationRecord.id, situationRecord);
+            ProcessEventData(situationRecord);
+
+            _AssociatedEvent associatedEvent = situation.situationExtension.associatedEvent[0];
+            if (null != associatedEvent)
+            {
+                log.Info("Associated event ID: " + associatedEvent.relatedSituation.id);
+                log.Info("Associated event reference: " + associatedEvent.relatedSituationReference);
+                log.Info("Association type: {}" + associatedEvent.associationType);
             }
         }
 

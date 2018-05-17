@@ -72,8 +72,11 @@ namespace SubscriberWebService.Services
                 // There is only ever 1 message per unit
                 VmsMessage message = unit.vms.vmsMessage[0].vmsMessage;
 
+                log.Info("Message type: " + message.vmsMessageInformationType);
                 log.Info("Set by: " + message.messageSetBy.values[0].Value);
                 log.Info("Last set at: " + message.timeLastSet);
+                log.Info("Related event: " + message.situationToWhichMessageIsRelated.id);
+
 
                 // There is only ever 1 text page specified, with multiple text lines
                 _TextPage textPage = message.textPage[0];
