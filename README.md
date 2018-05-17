@@ -2,7 +2,7 @@ NTIS Subscriber Service example - README
 ========================================
 
 This project is an example implementation of the NTIS Subscriber Service.
-It has been created in, and tested with, Visual Studio 2012 and the .NET framework version 4
+It has been created in, and tested with, Visual Studio 2017 and the .NET framework version 4
 
 For the instructions below, it is assumed that
 
